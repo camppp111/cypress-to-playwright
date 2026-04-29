@@ -7,7 +7,7 @@ A package that translates Cypress commands to Playwright equivalents at runtime.
 ## Installation
 
 ```bash
-npm install @camppp111/cypress-to-playwright
+npm install @camppp/cypress-to-playwright
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ npm install @camppp111/cypress-to-playwright
 ### New Playwright tests, Cypress-style commands
 
 ```typescript
-import { setupCypressToPlaywright } from '@camppp111/cypress-to-playwright';
+import { setupCypressToPlaywright } from '@camppp/cypress-to-playwright';
 import { test, expect } from '@playwright/test';
 
 test('example', async ({ page }) => {
@@ -36,7 +36,7 @@ Add this to your `playwright.config.ts`:
 
 ```typescript
 import { defineConfig } from '@playwright/test';
-import { setupCypressGlobals } from '@camppp111/cypress-to-playwright';
+import { setupCypressGlobals } from '@camppp/cypress-to-playwright';
 
 setupCypressGlobals(); // Injects cy, describe, it, expect, Cypress into globalThis
 
@@ -48,7 +48,7 @@ export default defineConfig({
 Then add this triple-slash directive at the top of any spec file that TypeScript complains about (or add it to a single `.d.ts` file in your project):
 
 ```typescript
-/// <reference types="@camppp111/cypress-to-playwright/globals" />
+/// <reference types="@camppp/cypress-to-playwright/globals" />
 ```
 
 Your existing spec files will just work:
@@ -92,7 +92,7 @@ The package also translates Mocha test structure functions to Playwright equival
 ### Example with Mocha
 
 ```typescript
-import { describe, context, it, beforeEach, afterEach, setupCypressToPlaywright } from '@camppp111/cypress-to-playwright';
+import { describe, context, it, beforeEach, afterEach, setupCypressToPlaywright } from '@camppp/cypress-to-playwright';
 import { expect } from '@playwright/test';
 import { chromium } from '@playwright/test';
 

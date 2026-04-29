@@ -1,5 +1,5 @@
 {
-  "name": "@camppp111/cypress-to-playwright",
+  "name": "@camppp/cypress-to-playwright",
   "version": "1.0.4",
   "description": "Translates Cypress commands to Playwright equivalents at runtime",
   "main": "dist/index.js",
@@ -19,8 +19,7 @@
     "LICENSE"
   ],
   "publishConfig": {
-    "access": "public",
-    "registry": "https://npm.pkg.github.com"
+    "access": "public"
   },
   "engines": {
     "node": ">=18.0.0"
@@ -41,12 +40,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/camppp111/cypress-to-playwright.git"
+    "url": "git+https://github.com/camppp/cypress-to-playwright.git"
   },
   "bugs": {
-    "url": "https://github.com/camppp111/cypress-to-playwright/issues"
+    "url": "https://github.com/camppp/cypress-to-playwright/issues"
   },
-  "homepage": "https://github.com/camppp111/cypress-to-playwright#readme",
+  "homepage": "https://github.com/camppp/cypress-to-playwright#readme",
   "author": "",
   "license": "MIT",
   "peerDependencies": {
