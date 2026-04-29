@@ -1,0 +1,57 @@
+{
+  "name": "cypress-to-playwright",
+  "version": "1.0.0",
+  "description": "Translates Cypress commands to Playwright equivalents at runtime",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./globals": {
+      "types": "./dist/src/globals.d.ts"
+    }
+  },
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "jest",
+    "test:playwright": "playwright test"
+  },
+  "keywords": [
+    "cypress",
+    "playwright",
+    "testing",
+    "command-translation",
+    "migration",
+    "e2e"
+  ],
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "@playwright/test": ">=1.40.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^5.2.3",
+    "@types/jest": "^29.0.0",
+    "@types/node": "^20.0.0",
+    "chai": "^6.2.2",
+    "cypress": "^15.13.0",
+    "jest": "^29.0.0",
+    "ts-jest": "^29.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.40.0",
+    "idb-keyval": "^6.2.2"
+  }
+}

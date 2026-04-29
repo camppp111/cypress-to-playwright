@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "lib": ["ES2020", "DOM"],
+    "declaration": true,
+    "outDir": "./dist",
+    "rootDir": ".",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "integration/*": ["cypress/integration/*"],
+      "support/*": ["cypress/support/*"]
+    },
+    "types": ["node", "./src/globals.d.ts"]
+  },
+  "include": ["src/**/*", "cypress/**/*"],
+  "exclude": ["node_modules"]
+}
