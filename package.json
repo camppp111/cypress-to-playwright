@@ -35,6 +35,14 @@
     "migration",
     "e2e"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/camppp111/cypress-to-playwright.git"
+  },
+  "bugs": {
+    "url": "https://github.com/camppp111/cypress-to-playwright/issues"
+  },
+  "homepage": "https://github.com/camppp111/cypress-to-playwright#readme",
   "author": "",
   "license": "MIT",
   "peerDependencies": {
