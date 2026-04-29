@@ -1,5 +1,5 @@
 {
-  "name": "cypress-to-playwright",
+  "name": "@camppp111/cypress-to-playwright",
   "version": "1.0.0",
   "description": "Translates Cypress commands to Playwright equivalents at runtime",
   "main": "dist/index.js",
